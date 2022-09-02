@@ -1,0 +1,113 @@
+.game {
+  position: relative;
+
+  &__bg img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+  }
+
+
+
+  &__dress-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__buttons-list {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+
+    right: 30vw;
+    top: 10vh;
+
+  }
+
+  &__buttons-item {
+
+    &:nth-child(1) {
+      display: none;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    border: 4px solid rgb(132, 132, 132);
+    border-radius: 10px;
+    transition: all .5s;
+
+    &:hover {
+      border: 4px solid rgb(16, 186, 56);
+    }
+
+    &.active {
+      border: 4px solid rgb(16, 186, 56);
+    }
+  }
+
+  &__ok-btn {
+    position: fixed;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    top: 70vh;
+    right: 50vw;
+
+    font-family: var(--font-family);
+    font-size: 3em;
+    font-weight: 400;
+    color: #fff;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    border:#fff solid 3px;
+
+    background-color: rgb(0, 0, 0, .4);
+
+    transition: all .5s;
+    display: none;
+
+    &:hover {
+      background-color: rgb(231, 228, 72);
+      border: none;
+      color: rgb(61, 59, 59);
+    }
+
+    &:nth-child(1) {
+      display: none;
+    }
+
+
+    &.active {
+      display: flex;
+    }
+
+  }
+
+}

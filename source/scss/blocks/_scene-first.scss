@@ -1,0 +1,48 @@
+.scene-first {
+  position: relative;
+
+  &__wrapper img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+  }
+
+  &__default-dress {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 3;
+  }
+
+
+  &__btn {
+    position: fixed;
+    top: 70vh;
+    right: 25vw;
+    z-index: 1;
+
+
+
+
+
+
+  }
+}
+
+
+
