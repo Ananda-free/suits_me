@@ -3,15 +3,17 @@
 @include('partials/head.html')
 
 <body>
-  @include('partials/header-mode.html')
+
 
   <main>
+    <audio src=""></audio>
+    <audio src="img/MusicBG.mp3" autoplay></audio>
 
     <section class="start">
 
       <div class="start__wrapper">
-        <img src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_BG1.jpg" alt="" class="game__bg">
 
+        <img src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_BG1.jpg" alt="" class="game__bg">
 
       </div>
       <ul class="start__dress-list">
@@ -22,27 +24,14 @@
             <img class="start__dress start__dress--active" src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_BubbleGirl.png" alt="dress">
           </li>
       </ul>
-      <a href="game.html" class="start__btn animationPulse animationRotate">
+      <a href="game.html" class="start__btn pulse rotate">
         <img src="img/Picture/start_btn.png" alt="">
       </a>
 
-      
+
     </section>
-
-
-
-
-
-
   </main>
-
-  @include('partials/footer.html')
-
-
-
-  <script type="text/javascript" src="js/main.js"></script>
-
+<script type="text/javascript" src="js/main.js"></script>
 
 </body>
-
 </html>

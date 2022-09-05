@@ -15,8 +15,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
-  cursor: url(hand.png), auto;
-
+  overflow-y: hidden;
 
   // @media screen and (max-width: 1210px) {
   //   overflow-x: hidden;
@@ -53,6 +52,7 @@ html {
 *::after,
 *::before {
   box-sizing: border-box;
+  cursor: url('../img/hand1.png'), auto !important;
 }
 
 * {
@@ -66,7 +66,7 @@ a {
   font-style: inherit;
   font-family: inherit;
   text-decoration: none;
-  cursor: url(hand.png), auto;
+
   margin: 0;
 }
 
@@ -79,7 +79,7 @@ button {
   border: none;
   display: inline-flex;
   outline: none;
-  cursor: url(hand.png), auto;
+
   padding: 0;
   margin: 0;
   line-height: initial;
@@ -172,12 +172,6 @@ input[type="number"] {
   &.active {
     display: block;
   }
-}
-
-.dis-scroll {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
 }
 
 

@@ -1,0 +1,271 @@
+
+@keyframes pulse-try {
+  0% {
+    transform: scale(1.2);
+  }
+  30% {
+
+    transform: rotate(6deg);
+
+}
+  40% {
+    transform: rotate(-6deg);
+
+}
+  50% {
+  transform: rotate(6deg);
+
+}
+  60% {
+  transform: rotate(-6deg);
+
+}
+  70% {
+  transform: rotate(6deg);
+
+}
+  80% {
+  transform: rotate(-6deg);
+
+}
+
+  100% {
+  transform: rotate(0);
+
+
+}
+}
+// Появление кнопок
+
+.button-1 {
+  opacity: 1;
+  animation: button-1 .50s;
+}
+
+.button-2 {
+
+  opacity: 1;
+  animation: button-2 1s;
+
+}
+
+.button-3 {
+
+  opacity: 1;
+  animation: button-2 1.50s;
+
+}
+
+.button-4 {
+
+  opacity: 1;
+  animation: button-2 2s;
+
+}
+
+.button-5 {
+
+  opacity: 1;
+  animation: button-2 2.50s;
+
+}
+
+@keyframes button-1 {
+  0% {
+    opacity: 0;
+}
+
+  100% {
+
+  opacity: 1;
+}
+}
+
+@keyframes button-2 {
+  0% {
+    opacity: 0;
+}
+
+  100% {
+
+  opacity: 1;
+}
+}
+
+@keyframes button-3 {
+  0% {
+    opacity: 0;
+}
+
+  100% {
+
+  opacity: 1;
+}
+}
+
+@keyframes button-4 {
+  0% {
+    opacity: 0;
+}
+
+  100% {
+
+  opacity: 1;
+}
+}
+
+@keyframes button-5 {
+  0% {
+    opacity: 0;
+}
+
+  100% {
+
+  opacity: 1;
+}
+}
+
+
+// появление эмоций
+
+.game__emoji {
+
+  opacity: 0;
+  position: absolute;
+
+
+    &:nth-child(1) {
+      display: none;
+    }
+
+  &.active {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    object-fit: cover;
+    animation: game__emoji 2s;
+    z-index: 50;
+    transform: translateY(-100%);
+
+  }
+}
+
+@keyframes game__emoji {
+  0% {
+
+    opacity: 1;
+    transform: translateY(100%);
+}
+
+90% {
+  opacity: 1;
+  transform: translateY(0);
+
+}
+
+100% {
+  opacity: 0;
+  transform: translateY(0);
+
+}
+
+}
+
+.bubble {
+  display: block;
+    opacity: 1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    animation: bubble 1s;
+    z-index: 0;
+    transform: scale(1);
+
+}
+
+@keyframes bubble {
+  0% {
+
+    opacity: 1;
+    transform: scale(0);
+}
+
+
+100% {
+  opacity: 1;
+    transform: scale(1);
+
+}
+}
+
+.fail {
+  display: none;
+    opacity: 1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    animation: fail 1s;
+
+    z-index: 1;
+    transform: scale(1);
+
+}
+
+@keyframes fail {
+  0% {
+    opacity: 0;
+      transform: scale(4);
+
+  }
+  50% {
+
+    opacity: .5;
+    transform: scale(1);
+}
+
+
+100% {
+  opacity: 1;
+    transform: scale(1);
+
+}
+}
+
+.try-again-btn {
+  position: fixed;
+  top: 70vh;
+  right: 25vw;
+  z-index: 1;
+  display: none;
+  animation: try-btn .3s;
+  transform: rotate(0);
+  animation-iteration-count: 5;
+
+  &:hover {
+    animation: pulse-try 1s;
+  }
+}
+
+@keyframes try-btn {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+
+    transform: rotate(6deg);
+}
+  66% {
+
+    transform: rotate(-6deg);
+}
+
+
+100% {
+  transform: rotate(0);
+
+}
+}

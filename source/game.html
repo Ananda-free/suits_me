@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="En">
 @include('partials/head.html')
-
 <body>
-  @include('partials/header-mode.html')
-
   <main>
+
     <section class="game">
+
+      <div id="preload" class="game__preloader">
+        <img  src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_Shadow.png" alt="">
+        </div>
+        <div class="game__loader">
+      </div>
 
       <div class="game__bg">
         <img src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_BG1.jpg" alt="">
@@ -14,8 +18,30 @@
 
 
       <div class="game__dress-tabs" data-parent-tabs>
-        <ul class="game__dress-list" >
 
+
+        <ul class="game__emoji-list">
+          <li class="game__emoji-item">
+            <img class="game__emoji" data-tab-emo="1"  src="#"  alt="">
+          </li>
+          <li class="game__emoji-item">
+            <img class="game__emoji" data-tab-emo="2"  src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_EmojiOutfit1.png"  alt="">
+          </li>
+          <li class="game__emoji-item">
+            <img class="game__emoji" data-tab-emo="3"  src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_EmojiOutfit2.png"  alt="">
+          </li>
+          <li class="game__emoji-item">
+            <img class="game__emoji" data-tab-emo="4"  src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_EmojiOutfit3.png"  alt="">
+          </li>
+          <li class="game__emoji-item">
+            <img class="game__emoji" data-tab-emo="5"  src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_EmojiOutfit4.png"  alt="">
+          </li>
+          <li class="game__emoji-item">
+            <img class="game__emoji" data-tab-emo="6"  src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_EmojiOutfit5.png"  alt="">
+          </li>
+        </ul>
+
+        <ul class="game__dress-list" >
           <li class="game__dress-item"  >
             <img class="game__dress-img active" data-tab-content="1" src="img/1920x1080/1920x1080_PA_en_DateWGirlfriend_OutfitDefault.png" alt="">
            </li>
@@ -39,95 +65,76 @@
 
 
         <ul class="game__buttons-list" >
-
           <li class="game__buttons-item">
-
               <img class="game__img" data-tab="1" src="img/Picture/button_1.png" alt="">
+          </li>
 
-          </li">
-
-          <li class="game__buttons-item" >
-
+          <li class="game__buttons-item button-1" >
               <img class="game__img" data-tab="2"  src="img/Picture/button_1.png"  alt="">
 
           </li>
 
-          <li class="game__buttons-item" >
-
+          <li class="game__buttons-item button-2" >
               <img class="game__img" data-tab="3"  src="img/Picture/button_2.png"  alt="">
-
           </li>
 
-          <li class="game__buttons-item" >
-
+          <li class="game__buttons-item button-3" >
               <img class="game__img" data-tab="4"  src="img/Picture/button_3.png"  alt="">
-
           </li>
 
-          <li class="game__buttons-item" >
-
+          <li class="game__buttons-item button-4" >
               <img class="game__img"  data-tab="5"  src="img/Picture/button_4.png"  alt="">
-
           </li>
 
-          <li class="game__buttons-item" >
-
+          <li class="game__buttons-item button-5" >
               <img class="game__img"  data-tab="6" src="img/Picture/button_5.png"  alt="">
-
           </li>
 
         </ul>
 
 
+
         <ul class="game__ok-btn-list">
           <li class="game__ok-btn-item">
-            <a href="1" class="game__ok-btn"  data-tab-btn="1">
+            <a href="#" class="game__ok-btn-none active"  data-tab-btn="1">
               OK
              </a>
           </li>
           <li class="game__ok-btn-item">
-            <a href="scene-1.html" class="game__ok-btn"  data-tab-btn="2">
+            <a href="scene-1.html" class="game__ok-btn pulse-ok"  data-tab-btn="2">
               OK
              </a>
           </li>
           <li class="game__ok-btn-item">
-            <a href="scene-2.html" class="game__ok-btn"  data-tab-btn="3">
+            <a href="scene-2.html" class="game__ok-btn pulse-ok"  data-tab-btn="3">
               OK
              </a>
           </li>
           <li class="game__ok-btn-item">
-            <a href="scene-3.html" class="game__ok-btn"  data-tab-btn="4">
+            <a href="scene-3.html" class="game__ok-btn pulse-ok"  data-tab-btn="4">
               OK
              </a>
           </li>
           <li class="game__ok-btn-item">
-            <a href="scene-4.html" class="game__ok-btn" data-tab-btn="5">
+            <a href="scene-4.html" class="game__ok-btn pulse-ok" data-tab-btn="5">
               OK
              </a>
           </li>
           <li class="game__ok-btn-item">
-            <a href="scene-5.html" class="game__ok-btn" data-tab-btn="6">
+            <a href="scene-5.html" class="game__ok-btn pulse-ok" data-tab-btn="6">
              OK
              </a>
           </li>
         </ul>
 
 
-
-
-
       </div>
-
-
 
   </section>
 
-
-
-
   </main>
 
-  @include('partials/footer.html')
+
 
 
 

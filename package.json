@@ -3,7 +3,7 @@
   "version": "2.0.4",
   "description": "gulp-builder for weblayout",
   "main": "gulpfile.js",
-  "author": "AndreySoin",
+  "author": "UriiMykh",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.7",
@@ -76,7 +76,8 @@
     "simplebar": "^5.3.6",
     "smooth-scroll": "^16.1.3",
     "stylelint": "^14.2.0",
-    "swiped-events": "^1.1.6"
+    "swiped-events": "^1.1.6",
+    "swup": "^2.0.19"
   },
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i build/**/*.html",
